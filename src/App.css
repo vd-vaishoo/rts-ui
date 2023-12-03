@@ -1,0 +1,126 @@
+.app{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.dashboard{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #f5f5f5;
+  font-family: 'Times New Roman', Times, serif;
+  overflow-y: hidden;
+}
+.sidebar{
+  width: 15%;
+  height: 100vh;
+  color:white;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background:linear-gradient(to right, #2196F3,#21c6f3)
+}
+.dashboard-content{
+  width: 85%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.filters-container{
+  padding-bottom: 20px;
+}
+.inputbox{
+  width: 200px;
+  height: 25px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.chart-container{
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid rgb(99, 196, 234); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  height: 460px;
+  padding: 10px 15px;
+}
+.number-boxes{
+  display: flex;
+  justify-content: space-between;
+}
+.num-box{
+  width: 15%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+.box-count{
+  font-size: 25px;
+  padding-top: 8px;
+}
+.charts{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.chart1,.chart2{
+  width: 47%;
+  height: 340px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+
+/* Job opp */
+.job-opp-content{
+  width: 85%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.table-container{
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid rgb(99, 196, 234); */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 430px;
+  padding: 10px 15px;
+}
+.blue-btn{
+  border: none;
+  color:white;
+  height: 40px;
+  width: 130px;
+  border-radius: 5px;
+  background:linear-gradient(to bottom, #2196F3,#21c6f3);
+  cursor: pointer;
+}
+table {
+  border-spacing: 0px;
+}
+tr{
+  padding: 10px 0px;
+}
+
+/* MUI COMPS */
+.mui-inputbox{
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+}
