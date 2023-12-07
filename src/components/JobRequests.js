@@ -27,7 +27,7 @@ const JobRequests = () => {
             <Link to="/jobopportunities">Job Opportunities</Link>
           </p>
           <p>
-            <Link to="/jobposition">Job Position Request</Link>
+            <Link to="/jobrequests">Job Position Request</Link>
           </p>
           <p>
             <Link to="/user">User</Link>

@@ -73,7 +73,7 @@ const JobOpportunities = () => {
 		<p><Link to="/">Dashboard</Link></p>
           <p><Link to="/jobopportunities">Job Opportunities</Link></p>
           <p><Link to="/jobrequests">Job Position Request</Link></p>
-          <p>User</p>
+          <p><Link to="/user">User</Link></p>
         </div>
       </div>
       <div className="job-opp-content">
