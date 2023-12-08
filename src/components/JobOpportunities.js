@@ -8,6 +8,8 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { VscCopy } from "react-icons/vsc";
 import { AiOutlineExport } from "react-icons/ai";
 import { IoAdd } from "react-icons/io5";
+import Sidebar from "./Sidebar";
+
 const JobOpportunities = () => {
   const columns = [
     {
@@ -62,30 +64,10 @@ const JobOpportunities = () => {
   return (
     <div className="dashboard">
       <div className="sidebar">
-        <img
-          src="https://www.vuedata.com/assets/vuedata%20light.png"
-          width="100%"
-          height="20px"
-          style={{ paddingTop: "15px" }}
-        />
-        <p style={{ fontSize: "10px" }}>Job Requisition System</p>
-        <div style={{ paddingTop: "30px" }}>
-          <p>
-            <Link to="/">Dashboard</Link>
-          </p>
-          <p>
-            <Link to="/jobopportunities">Job Opportunities</Link>
-          </p>
-          <p>
-            <Link to="/jobrequests">Job Position Request</Link>
-          </p>
-          <p>
-            <Link to="/user">User</Link>
-          </p>
-        </div>
+       <Sidebar/>
       </div>
       <div className="job-opp-content">
-        <h1>Job Opportunities</h1>
+        <h2>Job Opportunities</h2>
         {/* filter section */}
         <div
           style={{

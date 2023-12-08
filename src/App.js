@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard';
 import JobOpportunities from './components/JobOpportunities';
 import JobRequests from './components/JobRequests';
 import User from './components/User';
+import MasterData from './components/MasterData';
 import Sidebar from './components/Sidebar';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/jobopportunities" element={<JobOpportunities/>}/>
         <Route path="/jobrequests" element={<JobRequests/>}/>
         <Route path="/user" element={<User/>}/>
+        <Route path="/masterdata" element={<MasterData/>}></Route>
       </Routes>
       </BrowserRouter>
       

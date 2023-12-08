@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Sidebar from "./Sidebar";
+
 
 const User = () => {
   return (
-	<div>
-		<h1>USER PAGE</h1>
-		<div>add user</div>
-		<div>role</div>
+	<div className="dashboard">
+		<div className="sidebar">
+        <Sidebar/>
+      </div>
+	  <div className="dashboard-content"></div>
+
 	</div>
   )
 }

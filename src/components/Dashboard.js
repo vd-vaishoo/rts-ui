@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import Sidebar from "./Sidebar";
 import { BarChart } from "@mui/x-charts";
 import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 
@@ -26,19 +25,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="sidebar">
-        <img
-          src="https://www.vuedata.com/assets/vuedata%20light.png"
-          width="100%"
-          height="20px"
-          style={{ paddingTop: "15px" }}
-        />
-        <p style={{ fontSize: "10px" }}>Job Requisition System</p>
-        <div style={{ paddingTop: "30px" }}>
-          <p><Link to="/">Dashboard</Link></p>
-          <p><Link to="/jobopportunities">Job Opportunities</Link></p>
-          <p><Link to="/jobrequests">Job Position Request</Link></p>
-          <p><Link to="/user">User</Link></p>
-        </div>
+        <Sidebar/>
       </div>
       <div className="dashboard-content">
         <div
