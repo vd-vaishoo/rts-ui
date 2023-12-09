@@ -1,7 +1,7 @@
 import React from "react";
 import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 import MUIDataTable from "mui-datatables";
-import { Link } from "react-router-dom";
+import { Link,Outlet } from "react-router-dom";
 import { IoEyeOutline } from "react-icons/io5";
 import { GoPencil } from "react-icons/go";
 import { RiDeleteBin6Line } from "react-icons/ri";
@@ -11,56 +11,7 @@ import { IoAdd } from "react-icons/io5";
 import Sidebar from "./Sidebar";
 
 const JobOpportunities = () => {
-  const columns = [
-    {
-      name: "name",
-      label: "Name",
-      options: {
-        filter: true,
-        sort: true,
-      },
-    },
-    {
-      name: "company",
-      label: "Company",
-      options: {
-        filter: true,
-        sort: false,
-      },
-    },
-    {
-      name: "city",
-      label: "City",
-      options: {
-        filter: true,
-        sort: false,
-      },
-    },
-    {
-      name: "state",
-      label: "State",
-      options: {
-        filter: true,
-        sort: false,
-      },
-    },
-  ];
-
-  const data = [
-    { name: "Joe James", company: "Test Corp", city: "Yonkers", state: "NY" },
-    { name: "John Walsh", company: "Test Corp", city: "Hartford", state: "CT" },
-    { name: "Bob Herm", company: "Test Corp", city: "Tampa", state: "FL" },
-    {
-      name: "James Houston",
-      company: "Test Corp",
-      city: "Dallas",
-      state: "TX",
-    },
-  ];
-
-  const options = {
-    filterType: "checkbox",
-  };
+ 
   return (
     <div className="dashboard">
       <div className="sidebar">
@@ -179,7 +130,10 @@ const JobOpportunities = () => {
             options={options}
           /> */}
           <div>
+            <Link to="/jobopportunities/new">
             <button className="blue-btn">New</button>
+            </Link>
+            
           </div>
           <table style={{ paddingTop: "10px" }}>
             <tr

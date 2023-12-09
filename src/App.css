@@ -88,6 +88,11 @@ a, a:hover, a:focus, a:active {
 
 
 /* Job opp */
+.input-box{
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
 .job-opp-content{
   width: 85%;
   padding-left: 10px;

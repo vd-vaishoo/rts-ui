@@ -8,7 +8,9 @@ const User = () => {
 		<div className="sidebar">
         <Sidebar/>
       </div>
-	  <div className="dashboard-content"></div>
+	  <div className="dashboard-content">
+		
+	  </div>
 
 	</div>
   )
